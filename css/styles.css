@@ -138,11 +138,6 @@ p {
     margin-right: 0;
 }
 
-/* .nav-contact:hover,
-.nav-contact:focus{
-color: var(--accent-color);
-} */
-
 .nav-contact{
     display: block;
     font-size: 14px;
@@ -152,7 +147,7 @@ color: var(--accent-color);
 
 .nav-mail{
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
 .link > .nav-mail:focus,
