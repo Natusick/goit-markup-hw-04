@@ -24,6 +24,7 @@ body{
 .link:hover,
 .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .list{
@@ -108,18 +109,16 @@ p {
     align-items: center;
 }
 
-.page-header{
-    display: flex;
-}
 
 .set-nav-page{
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-right: 50px;
+    display: block;
 }
 
-.page-header >.set-nav-page:last-child{
+.set-nav-page {
+     margin-right: 50px;
+}
+
+.set-nav-page:last-child{
     margin-right:0;
 }
 
@@ -135,44 +134,40 @@ p {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-    
-}
-.nav-contact{
-    font-size: 14px;
     margin-left: auto;
-    margin-right: 0; 
+    margin-right: 0;
+}
+
+/* .nav-contact:hover,
+.nav-contact:focus{
+color: var(--accent-color);
+} */
+
+.nav-contact{
+    display: block;
+    font-size: 14px;
+    padding-left: 50px;
     color: var(--title-text-color);    
 }
-.icon-mail{
-    display: block;
-    max-width: 16px;
-    max-height: 12px;
+
+.nav-mail{
     margin-right: 10px;
     fill: #757575;
-    
 }
-.icon-phone{
-    display: block;
-    max-width: 10px;
-    max-height: 16px;
-    margin-right: 10px;
-    margin-left: 30px;
-    fill: #757575;
-}
-.icon-mail:hover,
-.icon-phone:hover{
-    fill: var(--accent-color);
+
+.link > .nav-mail:focus,
+.link > .nav-mail:hover{
+    color: currentColor;
 }
 
 /* ---------------------------------Hero-------------------------------- */
 .hero{
-    width: 1600px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: auto;
-    background-color: rgba(47, 48, 58, 0.4);
+    margin:  0 auto;
     text-align: center;
-    background-image: url(../imeges/hero.jpg);  
+    background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero.png); 
     background-repeat: no-repeat;
     background-position: center; 
 } 
@@ -208,10 +203,7 @@ p {
 
 .benefits-block{
     display: flex;
-    margin: auto;
-    
-    
-     
+    margin: auto;    
 }
 
 .benefits-icon{
@@ -222,12 +214,6 @@ p {
     margin: auto;
     background-color: #F5F4FA;    
 }
-
-.benefits-icon:hover{
-    border: 2px solid var(--accent-color);
-    fill: var(--accent-color);
- }
-
 
 .set-benefits-item{
     display: flex;
@@ -421,7 +407,8 @@ flex-basis: calc(100% / 3);
 margin-right: 0px;
 }
 
-.clients-icon:hover{
+.clients-icon:hover,
+.clients-icon:focus{
     fill: var(--accent-color);
     border: 2px solid var(--accent-color);   
 }
@@ -527,18 +514,21 @@ margin-right: 0px;
 
 /* Footer */
 .footer{
+    max-width: 1600px;
     display: flex;
     height: 252px;
+    margin: 0 auto;
     background-color: #2F303A;
+}
+
+.page-footer{
+    display: flex;
 }
 
 .footer-set{
     padding-top: 60px;    
 }
 
-.footer-logo{
-      
-}
 .logo-white{
     color:var(--primary-white-color);
 }
@@ -549,9 +539,6 @@ margin-right: 0px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
-    
-}
-.footer-contact{
     
 }
 
