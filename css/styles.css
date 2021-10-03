@@ -147,6 +147,7 @@ p {
 }
 
 .nav-mail{
+    box-sizing: border-box;
     margin-right: 10px;
     fill: currentColor;
 }
